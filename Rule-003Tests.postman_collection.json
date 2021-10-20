@@ -60,11 +60,11 @@
           }
         },
         "url": {
-          "raw": "http://gateway.openfaas:8080/function/off-from-rule-003/execute",
+          "raw": "https://frmfaas.sybrin.com/function/off-rule-003.openfaas-fn/execute",
           "protocol": "http",
           "host": ["gateway", "openfaas"],
           "port": "8080",
-          "path": ["function", "off-from-rule-003", "execute"]
+          "path": ["function", "off-rule-003.openfaas-fn", "execute"]
         }
       },
       "response": []
