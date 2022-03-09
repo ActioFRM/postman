@@ -199,7 +199,7 @@
 							"raw": "http://gateway.openfaas:8080/_db/transactionHistory/_api/cursor",
 							"protocol": "https",
 							"host": [
-								"frmarango",
+								"openfaas:8080",
 								"sybrin",
 								"com"
 							],
