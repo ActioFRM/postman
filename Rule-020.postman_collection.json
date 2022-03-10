@@ -8997,14 +8997,17 @@
 					}
 				},
 				"url": {
-					"raw": "localhost:3000/execute/",
+					"raw": "http://gateway.openfaas:8080/function/off-rule-020-rel-1-0-0/execute",
+					"protocol": "http",
 					"host": [
-						"localhost"
+						"gateway",
+						"openfaas"
 					],
-					"port": "3000",
+					"port": "8080",
 					"path": [
-						"execute",
-						""
+						"function",
+						"off-rule-020-rel-1-0-0",
+						"execute"
 					]
 				}
 			},
