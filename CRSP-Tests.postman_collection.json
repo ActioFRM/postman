@@ -1,8 +1,9 @@
 {
 	"info": {
-		"_postman_id": "8c173102-100c-484f-9f1a-ddc62fb230ec",
+		"_postman_id": "1b8bfc3c-ad7a-47ce-8015-252d189869d7",
 		"name": "CRSP-Tests",
-		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "8089578"
 	},
 	"item": [
 		{
@@ -62,6 +63,11 @@
 									"                     \"host\":\"http://gateway.openfaas:8080/function/off-typology-processor-rel-1-0-0\",\r",
 									"                     \"cfg\":\"1.0.0\",\r",
 									"                     \"rules\":[\r",
+									"                        {\r",
+									"                           \"id\":\"003@1.0.0\",\r",
+									"                           \"host\":\"http://gateway.openfaas:8080/function/off-rule-003\",\r",
+									"                           \"cfg\":\"1.0.0\"\r",
+									"                        },\r",
 									"                        {\r",
 									"                           \"id\":\"028@1.0.0\",\r",
 									"                           \"host\":\"http://gateway.openfaas:8080/function/off-rule-028\",\r",
@@ -378,7 +384,7 @@
 									"});\r",
 									" \r",
 									"pm.test(\"check that there is actual data received back \", function () {\r",
-									"    pm.expect(jsonData.result).to.not.eql([]);\r",
+									"    pm.expect(jsonData.result).to.eql([]);\r",
 									"});"
 								],
 								"type": "text/javascript"

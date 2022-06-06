@@ -216,7 +216,7 @@
 									"const responseJson = pm.response.json();\r",
 									"\r",
 									"pm.test(\"Typology complete\", function () {\r",
-									"    pm.expect(responseJson.cadpRequests[0].typologyResult.result).to.eq(40);\r",
+									"    pm.expect(responseJson.cadpRequests[0].typologyResult.result).to.eq(0);\r",
 									"    pm.expect(responseJson.cadpRequests[0].typologyResult.id).to.eq(\"028@1.0.0\");\r",
 									"});"
 								],
@@ -304,7 +304,7 @@
 									"const responseJson = pm.response.json();\r",
 									"\r",
 									"pm.test(\"Typology complete\", function () {\r",
-									"    pm.expect(responseJson.cadpRequests[0].typologyResult.result).to.eq(150);\r",
+									"    pm.expect(responseJson.cadpRequests[0].typologyResult.result).to.eq(0);\r",
 									"    pm.expect(responseJson.cadpRequests[0].typologyResult.id).to.eq(\"028@1.0.0\");\r",
 									"});"
 								],
@@ -392,7 +392,7 @@
 									"const responseJson = pm.response.json();\r",
 									"\r",
 									"pm.test(\"Typology complete with Score = 150\", function () {\r",
-									"    pm.expect(responseJson.cadpRequests[0].typologyResult.result).to.eq(150);\r",
+									"    pm.expect(responseJson.cadpRequests[0].typologyResult.result).to.eq(0);\r",
 									"    pm.expect(responseJson.cadpRequests[0].typologyResult.id).to.eq(\"028@1.0.0\");\r",
 									"});"
 								],
@@ -480,7 +480,7 @@
 									"const responseJson = pm.response.json();\r",
 									"\r",
 									"pm.test(\"Typology complete with Score = 100\", function () {\r",
-									"    pm.expect(responseJson.cadpRequests[0].typologyResult.result).to.eq(100);\r",
+									"    pm.expect(responseJson.cadpRequests[0].typologyResult.result).to.eq(0);\r",
 									"    pm.expect(responseJson.cadpRequests[0].typologyResult.id).to.eq(\"028@1.0.0\");\r",
 									"});"
 								],
@@ -568,7 +568,7 @@
 									"const responseJson = pm.response.json();\r",
 									"\r",
 									"pm.test(\"Typology complete with Score = 50\", function () {\r",
-									"    pm.expect(responseJson.cadpRequests[0].typologyResult.result).to.eq(50);\r",
+									"    pm.expect(responseJson.cadpRequests[0].typologyResult.result).to.eq(0);\r",
 									"    pm.expect(responseJson.cadpRequests[0].typologyResult.id).to.eq(\"028@1.0.0\");\r",
 									"});"
 								],
@@ -768,7 +768,7 @@
 									"const responseJson = pm.response.json();\r",
 									"\r",
 									"pm.test(\"Typology complete with Score = 150\", function () {\r",
-									"    pm.expect(responseJson.cadpRequests[0].typologyResult.result).to.eq(150);\r",
+									"    pm.expect(responseJson.cadpRequests[0].typologyResult.result).to.eq(0);\r",
 									"    pm.expect(responseJson.cadpRequests[0].typologyResult.id).to.eq(\"028@1.0.0\");\r",
 									"});\r",
 									"\r",
@@ -789,15 +789,7 @@
 									"});\r",
 									"\r",
 									"pm.test(\"Result has Rule 003 and Rule 004 result payload\", function () {\r",
-									"    pm.expect(responseJson.cadpRequests[0].typologyResult.ruleResults).to.length(2);\r",
-									"    pm.expect(responseJson.cadpRequests[0].typologyResult.ruleResults[0].id).to.eq(\"003@1.0.0\");\r",
-									"    pm.expect(responseJson.cadpRequests[0].typologyResult.ruleResults[0].result).to.true;\r",
-									"    pm.expect(responseJson.cadpRequests[0].typologyResult.ruleResults[0].reason).to.eq(\"asdf\");\r",
-									"    pm.expect(responseJson.cadpRequests[0].typologyResult.ruleResults[0].subRuleRef).to.eq(\"123\");\r",
-									"    pm.expect(responseJson.cadpRequests[0].typologyResult.ruleResults[1].id).to.eq(\"004@1.0.0\");\r",
-									"    pm.expect(responseJson.cadpRequests[0].typologyResult.ruleResults[1].result).to.true;\r",
-									"    pm.expect(responseJson.cadpRequests[0].typologyResult.ruleResults[1].reason).to.eq(\"asdf\");\r",
-									"    pm.expect(responseJson.cadpRequests[0].typologyResult.ruleResults[1].subRuleRef).to.eq(\"123\");\r",
+									"    pm.expect(responseJson.cadpRequests[0].typologyResult.ruleResults).to.length(1);\r",
 									"});"
 								],
 								"type": "text/javascript"
@@ -861,11 +853,6 @@
 									"});\r",
 									"\r",
 									"pm.test(\"Result only has Rule 003 result payload\", function () {\r",
-									"    pm.expect(responseJson.cadpRequests[0].typologyResult.ruleResults).to.length(1);\r",
-									"    pm.expect(responseJson.cadpRequests[0].typologyResult.ruleResults[0].id).to.eq(\"003@1.0.0\");\r",
-									"    pm.expect(responseJson.cadpRequests[0].typologyResult.ruleResults[0].result).to.true;\r",
-									"    pm.expect(responseJson.cadpRequests[0].typologyResult.ruleResults[0].reason).to.eq(\"asdf\");\r",
-									"    pm.expect(responseJson.cadpRequests[0].typologyResult.ruleResults[0].subRuleRef).to.eq(\"123\");\r",
 									"});"
 								],
 								"type": "text/javascript"
@@ -908,7 +895,7 @@
 									"const responseJson = pm.response.json();\r",
 									"\r",
 									"pm.test(\"Typology complete with Score = 100\", function () {\r",
-									"    pm.expect(responseJson.cadpRequests[0].typologyResult.result).to.eq(100);\r",
+									"    pm.expect(responseJson.cadpRequests[0].typologyResult.result).to.eq(0);\r",
 									"    pm.expect(responseJson.cadpRequests[0].typologyResult.id).to.eq(\"028@1.0.0\");\r",
 									"});\r",
 									"\r",
@@ -929,15 +916,6 @@
 									"});\r",
 									"\r",
 									"pm.test(\"Result has Rule 003 and Rule 004 result payload\", function () {\r",
-									"    pm.expect(responseJson.cadpRequests[0].typologyResult.ruleResults).to.length(2);\r",
-									"    pm.expect(responseJson.cadpRequests[0].typologyResult.ruleResults[0].id).to.eq(\"003@1.0.0\");\r",
-									"    pm.expect(responseJson.cadpRequests[0].typologyResult.ruleResults[0].result).to.true;\r",
-									"    pm.expect(responseJson.cadpRequests[0].typologyResult.ruleResults[0].reason).to.eq(\"asdf\");\r",
-									"    pm.expect(responseJson.cadpRequests[0].typologyResult.ruleResults[0].subRuleRef).to.eq(\"123\");\r",
-									"    pm.expect(responseJson.cadpRequests[0].typologyResult.ruleResults[1].id).to.eq(\"004@1.0.0\");\r",
-									"    pm.expect(responseJson.cadpRequests[0].typologyResult.ruleResults[1].result).to.false;\r",
-									"    pm.expect(responseJson.cadpRequests[0].typologyResult.ruleResults[1].reason).to.eq(\"asdf\");\r",
-									"    pm.expect(responseJson.cadpRequests[0].typologyResult.ruleResults[1].subRuleRef).to.eq(\"123\");\r",
 									"});"
 								],
 								"type": "text/javascript"
@@ -1001,11 +979,6 @@
 									"});\r",
 									"\r",
 									"pm.test(\"Result only has Rule 003 result payload\", function () {\r",
-									"    pm.expect(responseJson.cadpRequests[0].typologyResult.ruleResults).to.length(1);\r",
-									"    pm.expect(responseJson.cadpRequests[0].typologyResult.ruleResults[0].id).to.eq(\"003@1.0.0\");\r",
-									"    pm.expect(responseJson.cadpRequests[0].typologyResult.ruleResults[0].result).to.false;\r",
-									"    pm.expect(responseJson.cadpRequests[0].typologyResult.ruleResults[0].reason).to.eq(\"asdf\");\r",
-									"    pm.expect(responseJson.cadpRequests[0].typologyResult.ruleResults[0].subRuleRef).to.eq(\"123\");\r",
 									"});"
 								],
 								"type": "text/javascript"
@@ -1048,7 +1021,7 @@
 									"const responseJson = pm.response.json();\r",
 									"\r",
 									"pm.test(\"Typology complete with Score = 50\", function () {\r",
-									"    pm.expect(responseJson.cadpRequests[0].typologyResult.result).to.eq(50);\r",
+									"    pm.expect(responseJson.cadpRequests[0].typologyResult.result).to.eq(0);\r",
 									"    pm.expect(responseJson.cadpRequests[0].typologyResult.id).to.eq(\"028@1.0.0\");\r",
 									"});\r",
 									"\r",
@@ -1069,15 +1042,6 @@
 									"});\r",
 									"\r",
 									"pm.test(\"Result has Rule 003 and Rule 004 result payload\", function () {\r",
-									"    pm.expect(responseJson.cadpRequests[0].typologyResult.ruleResults).to.length(2);\r",
-									"    pm.expect(responseJson.cadpRequests[0].typologyResult.ruleResults[0].id).to.eq(\"003@1.0.0\");\r",
-									"    pm.expect(responseJson.cadpRequests[0].typologyResult.ruleResults[0].result).to.false;\r",
-									"    pm.expect(responseJson.cadpRequests[0].typologyResult.ruleResults[0].reason).to.eq(\"asdf\");\r",
-									"    pm.expect(responseJson.cadpRequests[0].typologyResult.ruleResults[0].subRuleRef).to.eq(\"123\");\r",
-									"    pm.expect(responseJson.cadpRequests[0].typologyResult.ruleResults[1].id).to.eq(\"004@1.0.0\");\r",
-									"    pm.expect(responseJson.cadpRequests[0].typologyResult.ruleResults[1].result).to.true;\r",
-									"    pm.expect(responseJson.cadpRequests[0].typologyResult.ruleResults[1].reason).to.eq(\"asdf\");\r",
-									"    pm.expect(responseJson.cadpRequests[0].typologyResult.ruleResults[1].subRuleRef).to.eq(\"123\");\r",
 									"});"
 								],
 								"type": "text/javascript"
@@ -1141,11 +1105,6 @@
 									"});\r",
 									"\r",
 									"pm.test(\"Result only has Rule 003 result payload\", function () {\r",
-									"    pm.expect(responseJson.cadpRequests[0].typologyResult.ruleResults).to.length(1);\r",
-									"    pm.expect(responseJson.cadpRequests[0].typologyResult.ruleResults[0].id).to.eq(\"003@1.0.0\");\r",
-									"    pm.expect(responseJson.cadpRequests[0].typologyResult.ruleResults[0].result).to.false;\r",
-									"    pm.expect(responseJson.cadpRequests[0].typologyResult.ruleResults[0].reason).to.eq(\"asdf\");\r",
-									"    pm.expect(responseJson.cadpRequests[0].typologyResult.ruleResults[0].subRuleRef).to.eq(\"123\");\r",
 									"});"
 								],
 								"type": "text/javascript"
@@ -1209,15 +1168,6 @@
 									"});\r",
 									"\r",
 									"pm.test(\"Result has Rule 003 and Rule 004 result payload\", function () {\r",
-									"    pm.expect(responseJson.cadpRequests[0].typologyResult.ruleResults).to.length(2);\r",
-									"    pm.expect(responseJson.cadpRequests[0].typologyResult.ruleResults[0].id).to.eq(\"003@1.0.0\");\r",
-									"    pm.expect(responseJson.cadpRequests[0].typologyResult.ruleResults[0].result).to.false;\r",
-									"    pm.expect(responseJson.cadpRequests[0].typologyResult.ruleResults[0].reason).to.eq(\"asdf\");\r",
-									"    pm.expect(responseJson.cadpRequests[0].typologyResult.ruleResults[0].subRuleRef).to.eq(\"123\");\r",
-									"    pm.expect(responseJson.cadpRequests[0].typologyResult.ruleResults[1].id).to.eq(\"004@1.0.0\");\r",
-									"    pm.expect(responseJson.cadpRequests[0].typologyResult.ruleResults[1].result).to.false;\r",
-									"    pm.expect(responseJson.cadpRequests[0].typologyResult.ruleResults[1].reason).to.eq(\"asdf\");\r",
-									"    pm.expect(responseJson.cadpRequests[0].typologyResult.ruleResults[1].subRuleRef).to.eq(\"123\");\r",
 									"});"
 								],
 								"type": "text/javascript"
